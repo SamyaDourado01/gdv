@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Página Inícial</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#home.html">GDV</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#" data-nav="cadastro">Cadastro</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#" data-nav="consulta">Consulta</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#" data-nav="caixa">Caixa</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="login.html">Sair</a>
+                </li>
+
+            </ul>
+    </nav>
+    
+
+    <div class="container">
+        <section id="cadastro" class="hide">
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#produtos">Produtos</a></li>
+                <li><a data-toggle="tab" href="#fornecedor">Fornecedores</a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="produtos" class="tab-pane fade in active">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail4" class="col-form-label">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputPassword4" class="col-form-label">Password</label>
+                                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress" class="col-form-label">Address</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress2" class="col-form-label">Address 2</label>
+                            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputCity" class="col-form-label">City</label>
+                                <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputState" class="col-form-label">State</label>
+                                <select id="inputState" class="form-control">Choose</select>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="inputZip" class="col-form-label">Zip</label>
+                                <input type="text" class="form-control" id="inputZip">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <label class="form-check-label">
+                              <input class="form-check-input" type="checkbox"> Check me out
+                            </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sign in</button>
+                    </form>
+                </div>
+                <div id="fornecedor" class="tab-pane fade">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail4" class="col-form-label">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputPassword4" class="col-form-label">Password</label>
+                                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress" class="col-form-label">Address</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress2" class="col-form-label">Address 2</label>
+                            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputCity" class="col-form-label">City</label>
+                                <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputState" class="col-form-label">State</label>
+                                <select id="inputState" class="form-control">Choose</select>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="inputZip" class="col-form-label">Zip</label>
+                                <input type="text" class="form-control" id="inputZip">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check">
+                                <label class="form-check-label">
+                              <input class="form-check-input" type="checkbox"> Check me out
+                            </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Sign in</button>
+                    </form>
+                </div>
+            </div>
+            
+        </section>
+        <section id="consulta" class="hide">
+                <ul class="nav nav-tabs">
+                        <li class="active"><a data-toggle="tab" href="#estoque">Estoque</a></li>
+                        <li><a data-toggle="tab" href="#fornecedores">Fornecedores</a></li>
+                        <li><a data-toggle="tab" href="#vendas">Vendas</a></li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="estoque" class="tab-pane fade in active">
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="inputEmail4" class="col-form-label">Email</label>
+                                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="inputPassword4" class="col-form-label">Password</label>
+                                        <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputAddress" class="col-form-label">Address</label>
+                                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputAddress2" class="col-form-label">Address 2</label>
+                                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="inputCity" class="col-form-label">City</label>
+                                        <input type="text" class="form-control" id="inputCity">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="inputState" class="col-form-label">State</label>
+                                        <select id="inputState" class="form-control">Choose</select>
+                                    </div>
+                                    <div class="form-group col-md-2">
+                                        <label for="inputZip" class="col-form-label">Zip</label>
+                                        <input type="text" class="form-control" id="inputZip">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                      <input class="form-check-input" type="checkbox"> Check me out
+                                    </label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Sign in</button>
+                            </form>
+                        </div>
+                        <div id="fornecedores" class="tab-pane fade">
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="inputEmail4" class="col-form-label">Email</label>
+                                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="inputPassword4" class="col-form-label">Password</label>
+                                        <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputAddress" class="col-form-label">Address</label>
+                                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputAddress2" class="col-form-label">Address 2</label>
+                                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="inputCity" class="col-form-label">City</label>
+                                        <input type="text" class="form-control" id="inputCity">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="inputState" class="col-form-label">State</label>
+                                        <select id="inputState" class="form-control">Choose</select>
+                                    </div>
+                                    <div class="form-group col-md-2">
+                                        <label for="inputZip" class="col-form-label">Zip</label>
+                                        <input type="text" class="form-control" id="inputZip">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                      <input class="form-check-input" type="checkbox"> Check me out
+                                    </label>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Sign in</button>
+                            </form>
+                        </div>
+
+                        <div id="vendas" class="tab-pane fade">
+                                <form>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="inputEmail4" class="col-form-label">Email</label>
+                                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                            <label for="inputPassword4" class="col-form-label">Password</label>
+                                            <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputAddress" class="col-form-label">Address</label>
+                                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputAddress2" class="col-form-label">Address 2</label>
+                                        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                            <label for="inputCity" class="col-form-label">City</label>
+                                            <input type="text" class="form-control" id="inputCity">
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label for="inputState" class="col-form-label">State</label>
+                                            <select id="inputState" class="form-control">Choose</select>
+                                        </div>
+                                        <div class="form-group col-md-2">
+                                            <label for="inputZip" class="col-form-label">Zip</label>
+                                            <input type="text" class="form-control" id="inputZip">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="form-check">
+                                            <label class="form-check-label">
+                                          <input class="form-check-input" type="checkbox"> Check me out
+                                        </label>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Sign in</button>
+                                </form>
+                            </div>
+
+                    </div>
+        </section>
+        <section id="caixa" class="hide">
+            <h1>Estou na caixa</h1>
+        </section>
+    </div>
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+
+    <script>
+        $('nav li').click(function () {
+            let destino = '#' + $(this).find('a').attr('data-nav')
+            $('.container section').each(function (index, value) {
+                $(this).addClass('hide')
+            })
+            $(destino).removeClass('hide')
+        })
+    </script>
+
+</body>
+
+</html>
